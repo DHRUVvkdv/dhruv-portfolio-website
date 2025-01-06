@@ -722,6 +722,73 @@ const publications = {
   ],
 };
 
+// Academic Projects Page
+const academicProjectsHeader = {
+  title: "Academic Projects",
+  description:
+    "My projects showcase my academic journey using various technologies and tools.",
+  avatar_image_path: "projects_image.svg",
+  categories: [
+    {
+      name: "Web Development",
+      projects: [
+        {
+          title: "E-Commerce Website",
+          description:
+            "Built a full-stack e-commerce platform for a local business",
+          technologies: ["React", "Node.js", "MongoDB"],
+          image: "project1.jpg",
+          link: "https://github.com/yourusername/project1",
+          date: "Spring 2023",
+          course: "Web Development II",
+          features: [
+            "User authentication",
+            "Shopping cart functionality",
+            "Payment integration",
+          ],
+        },
+      ],
+    },
+    {
+      name: "Data Science",
+      projects: [
+        {
+          title: "Customer Segmentation Analysis",
+          description: "Analyzed customer data to identify key market segments",
+          technologies: ["Python", "Scikit-learn", "Pandas"],
+          image: "project2.jpg",
+          link: "https://github.com/yourusername/project2",
+          date: "Fall 2023",
+          course: "Data Mining",
+          features: [
+            "K-means clustering",
+            "Data visualization",
+            "Statistical analysis",
+          ],
+        },
+        {
+          title: "Customer Segmentation Analysis",
+          description: "Analyzed customer data to identify key market segments",
+          technologies: ["Python", "Scikit-learn", "Pandas"],
+          image: "project2.jpg",
+          link: "https://github.com/yourusername/project2",
+          date: "Fall 2023",
+          course: "Data Mining",
+          features: [
+            "K-means clustering",
+            "Data visualization",
+            "Statistical analysis",
+          ],
+        },
+      ],
+    },
+    {
+      name: "Mobile Development",
+      projects: [],
+    },
+  ],
+};
+
 // Contact Page
 const contactPageData = {
   contactSection: {
@@ -765,6 +832,7 @@ export {
   certifications,
   experience,
   projectsHeader,
+  academicProjectsHeader,
   publicationsHeader,
   publications,
   contactPageData,
