@@ -7,6 +7,16 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  :root {
+    --color-body: ${({ theme }) => theme.body};
+    --color-text: ${({ theme }) => theme.text};
+    --color-highlight: ${({ theme }) => theme.highlight};
+    --color-dark: ${({ theme }) => theme.dark};
+    --color-secondaryText: ${({ theme }) => theme.secondaryText};
+    --color-imageHighlight: ${({ theme }) => theme.imageHighlight};
+    --color-splashBg: ${({ theme }) => theme.splashBg};
+  }
+
   body {
     align-items: center;
     background: ${({ theme }) => theme.body};

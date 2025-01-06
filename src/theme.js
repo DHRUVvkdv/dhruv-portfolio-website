@@ -195,4 +195,32 @@ export const materialTealTheme = {
   splashBg: "#05505E",
 };
 
-export const chosenTheme = blueTheme;
+export const minimalistGrayTheme = {
+  body: "#F4F4F4",
+  text: "#2C2C2C",
+  expTxtColor: "#1A1A1A",
+  highlight: "#DADADA",
+  dark: "#1A1A1A",
+  secondaryText: "#6B6B6B",
+  imageHighlight: "#A0A0A0",
+  compImgHighlight: "#E6E6E6",
+  jacketColor: "#707070",
+  headerColor: "#A0A0A077",
+  splashBg: "#2C2C2C",
+};
+
+export const boldCyanTheme = {
+  body: "#E0F7FA",
+  text: "#004D40",
+  expTxtColor: "#00251A",
+  highlight: "#80DEEA",
+  dark: "#001F16",
+  secondaryText: "#00796B",
+  imageHighlight: "#00ACC1",
+  compImgHighlight: "#B2EBF2",
+  jacketColor: "#004D40",
+  headerColor: "#00ACC177",
+  splashBg: "#004D40",
+};
+
+export const chosenTheme = boldCyanTheme;
