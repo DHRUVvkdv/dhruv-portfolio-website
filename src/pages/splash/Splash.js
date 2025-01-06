@@ -12,7 +12,7 @@ const SplashScreen = () => {
   const containerRef = useRef(null);
 
   const name = "Dhruv Varshney";
-  const username = "scanny";
+  const username = "";
   const commands = [
     "sudo init --dev",
     "npm install soul",
