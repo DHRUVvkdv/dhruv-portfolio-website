@@ -1,131 +1,24 @@
 {
   "data": [
     {
-      "id": "R_kgDOMV_rMQ",
-      "name": "teaching-assistant",
-      "createdAt": "2024-07-13T23:47:21Z",
-      "url": "https://github.com/DHRUVvkdv/teaching-assistant",
-      "description": "AI-Enhanced Teaching Assistant: Bridging Instructor Knowledge and Web Intelligence",
-      "isFork": false,
+      "id": "1",
+      "name": "Project Name",
+      "description": "Short description",
+      "longDescription": "Detailed description",
+      "createdAt": "2024-01-06T00:00:00Z",
+      "url": "https://github.com/...",
+      "live": "https://...",
       "languages": [
-        {
-          "name": "Dockerfile",
-          "iconifyClass": "simple-icons:docker"
-        },
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDONCmYUQ",
-      "name": "chariott",
-      "createdAt": "2024-10-19T07:46:11Z",
-      "url": "https://github.com/DHRUVvkdv/chariott",
-      "description": null,
-      "isFork": false,
-      "languages": [
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "Dockerfile",
-          "iconifyClass": "simple-icons:docker"
-        },
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOMx1a9A",
-      "name": "vthacks-2024-frontend",
-      "createdAt": "2024-09-15T01:26:07Z",
-      "url": "https://github.com/DHRUVvkdv/vthacks-2024-frontend",
-      "description": null,
-      "isFork": false,
-      "languages": [
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOMMjAPg",
-      "name": "RAG-Chatbot-Backend",
-      "createdAt": "2024-06-21T23:16:50Z",
-      "url": "https://github.com/DHRUVvkdv/RAG-Chatbot-Backend",
-      "description": "making the backend server for AI assisted chatbot ",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "Dockerfile",
-          "iconifyClass": "simple-icons:docker"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOLNhdtw",
-      "name": "Hack-Violet-2024",
-      "createdAt": "2024-02-03T18:50:35Z",
-      "url": "https://github.com/DHRUVvkdv/Hack-Violet-2024",
-      "description": null,
-      "isFork": false,
-      "languages": [
-        {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        }
-      ]
-    },
-    {
-      "id": "R_kgDOMx2AvA",
-      "name": "mapability-backend",
-      "createdAt": "2024-09-15T02:25:32Z",
-      "url": "https://github.com/DHRUVvkdv/mapability-backend",
-      "description": null,
-      "isFork": false,
-      "languages": [
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "Dockerfile",
-          "iconifyClass": "simple-icons:docker"
-        },
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        }
+        "react",
+        "node",
+        "mongodb"
+      ],
+      "video": "src/assets/videos/try1.mov",
+      "thumbnail": "/path/to/thumbnail.jpg",
+      "impact": "10k+ active users • Winner of XYZ Hackathon",
+      "features": [
+        "Feature 1",
+        "Feature 2"
       ]
     }
   ]

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
+import ProjectCard from "../../components/projectCard/ProjectCard";
 import PublicationCard from "../../components/publicationsCard/PublicationCard";
 import Button from "../../components/button/Button";
 import TopButton from "../../components/topButton/TopButton";
@@ -26,10 +26,6 @@ class Projects extends Component {
           <Fade bottom duration={2000} distance="40px">
             <div className="projects-heading-div">
               <div className="projects-heading-img-div">
-                {/* <img
-											src={require(`../../assets/images/${projectsHeader["avatar_image_path"]}`)}
-											alt=""
-										/> */}
                 <ProjectsImg theme={theme} />
               </div>
               <div className="projects-heading-text-div">
@@ -50,9 +46,15 @@ class Projects extends Component {
           </Fade>
         </div>
         <div className="repo-cards-div-main">
-          {ProjectsData.data.map((repo) => {
-            return <GithubRepoCard repo={repo} theme={theme} />;
-          })}
+          {ProjectsData &&
+            ProjectsData.data &&
+            ProjectsData.data.map((project) => (
+              <ProjectCard
+                key={project.id || project.name}
+                repo={project}
+                theme={theme}
+              />
+            ))}
         </div>
         <Button
           text={"More Projects"}
@@ -62,8 +64,7 @@ class Projects extends Component {
           theme={theme}
         />
 
-        {/* Publications  */}
-        {publications.data.length > 0 ? (
+        {publications && publications.data && publications.data.length > 0 && (
           <div className="basic-projects">
             <Fade bottom duration={2000} distance="40px">
               <div className="publications-heading-div">
@@ -84,12 +85,14 @@ class Projects extends Component {
               </div>
             </Fade>
           </div>
-        ) : null}
+        )}
 
         <div className="repo-cards-div-main">
-          {publications.data.map((pub) => {
-            return <PublicationCard pub={pub} theme={theme} />;
-          })}
+          {publications &&
+            publications.data &&
+            publications.data.map((pub) => (
+              <PublicationCard key={pub.id} pub={pub} theme={theme} />
+            ))}
         </div>
 
         <Footer theme={this.props.theme} onToggle={this.props.onToggle} />
