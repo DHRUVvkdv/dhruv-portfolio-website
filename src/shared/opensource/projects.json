@@ -5,7 +5,7 @@
       "name": "AI-powered teaching assistant",
       "description": "A teacching assistant made with AI",
       "longDescription": "This tool will help to teach in a more postive way. This tool will help to teach in a more postive way. This tool will help to teach in a more postive way",
-      "createdAt": "2024-01-06T00:00:00Z",
+      "date": "March 2021",
       "url": "https://github.com/DHRUVvkdv/vthacks-2024-frontend",
       "live": "https://mapability.vercel.app/",
       "languages": [
@@ -25,8 +25,8 @@
       "video": "https://res.cloudinary.com/dru4ekf2q/video/upload/v1736185134/Portfolio/30_June_2021_4_e13vwl.mp4",
       "thumbnail": "https://res.cloudinary.com/dru4ekf2q/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1711268052/samples/upscale-face-1.jpg",
       "impact": [
-        "10k+ active users • Winner ",
-        "of XYZ Hacbgcdfjksl;kathon"
+        "•10k+ active users • Winner        df§     •of XYZ Hacbgcdfjksl;kathon",
+        "•of XYZ Hacbgcdfjksl;kathon"
       ],
       "features": [
         "100+ concurrent users",
@@ -35,146 +35,133 @@
     },
     {
       "id": "1",
-      "name": "Project Name",
-      "description": "Short description",
-      "longDescription": "Detailed description",
-      "createdAt": "2024-01-06T00:00:00Z",
-      "url": "https://github.com/...",
-      "live": "https://...",
+      "name": "AI-powered teaching assistant",
+      "description": "A teacching assistant made with AI",
+      "longDescription": "This tool will help to teach in a more postive way. This tool will help to teach in a more postive way. This tool will help to teach in a more postive way",
+      "date": "March 2021",
+      "url": "https://github.com/DHRUVvkdv/vthacks-2024-frontend",
       "languages": [
-        "react",
-        "node",
-        "mongodb"
+        {
+          "name": "Dockerfile",
+          "iconifyClass": "simple-icons:docker"
+        },
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
       ],
       "video": "https://res.cloudinary.com/dru4ekf2q/video/upload/v1736185134/Portfolio/30_June_2021_4_e13vwl.mp4",
       "thumbnail": "https://res.cloudinary.com/dru4ekf2q/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1711268052/samples/upscale-face-1.jpg",
       "impact": [
-        "10k+ active users • Winner ",
-        "of XYZ Hacbgcdfjksl;kathon"
+        "•10k+ active users • Winner        df§     •of XYZ Hacbgcdfjksl;kathon",
+        "•of XYZ Hacbgcdfjksl;kathon"
       ],
       "features": [
-        "Feature 1",
-        "Feature 2"
+        "100+ concurrent users",
+        "Live display of topics"
       ]
     },
     {
       "id": "1",
-      "name": "Project Name",
-      "description": "Short description",
-      "longDescription": "Detailed description",
-      "createdAt": "2024-01-06T00:00:00Z",
-      "url": "https://github.com/...",
-      "live": "https://...",
+      "name": "AI-powered teaching assistant",
+      "description": "A teacching assistant made with AI",
+      "longDescription": "This tool will help to teach in a more postive way. This tool will help to teach in a more postive way. This tool will help to teach in a more postive way",
+      "date": "March 2021",
+      "url": "https://github.com/DHRUVvkdv/vthacks-2024-frontend",
+      "live": "https://mapability.vercel.app/",
       "languages": [
-        "react",
-        "node",
-        "mongodb"
+        {
+          "name": "Dockerfile",
+          "iconifyClass": "simple-icons:docker"
+        },
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
       ],
       "video": "https://res.cloudinary.com/dru4ekf2q/video/upload/v1736185134/Portfolio/30_June_2021_4_e13vwl.mp4",
       "thumbnail": "https://res.cloudinary.com/dru4ekf2q/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1711268052/samples/upscale-face-1.jpg",
       "impact": [
-        "10k+ active users • Winner ",
-        "of XYZ Hacbgcdfjksl;kathon"
+        "•10k+ active users • Winner        df§     •of XYZ Hacbgcdfjksl;kathon",
+        "•of XYZ Hacbgcdfjksl;kathon"
       ],
       "features": [
-        "Feature 1",
-        "Feature 2"
+        "100+ concurrent users",
+        "Live display of topics"
       ]
     },
     {
       "id": "1",
-      "name": "Project Name",
-      "description": "Short description",
-      "longDescription": "Detailed description",
-      "createdAt": "2024-01-06T00:00:00Z",
-      "url": "https://github.com/...",
-      "live": "https://...",
+      "name": "AI-powered teaching assistant",
+      "description": "A teacching assistant made with AI",
+      "longDescription": "This tool will help to teach in a more postive way. This tool will help to teach in a more postive way. This tool will help to teach in a more postive way",
+      "date": "March 2021",
+      "url": "https://github.com/DHRUVvkdv/vthacks-2024-frontend",
+      "live": "https://mapability.vercel.app/",
       "languages": [
-        "react",
-        "node",
-        "mongodb"
+        {
+          "name": "Dockerfile",
+          "iconifyClass": "simple-icons:docker"
+        },
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
       ],
       "video": "https://res.cloudinary.com/dru4ekf2q/video/upload/v1736185134/Portfolio/30_June_2021_4_e13vwl.mp4",
       "thumbnail": "https://res.cloudinary.com/dru4ekf2q/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1711268052/samples/upscale-face-1.jpg",
       "impact": [
-        "10k+ active users • Winner ",
-        "of XYZ Hacbgcdfjksl;kathon"
+        "•10k+ active users • Winner        df§     •of XYZ Hacbgcdfjksl;kathon",
+        "•of XYZ Hacbgcdfjksl;kathon"
       ],
       "features": [
-        "Feature 1",
-        "Feature 2"
+        "100+ concurrent users",
+        "Live display of topics"
       ]
     },
     {
       "id": "1",
-      "name": "Project Name",
-      "description": "Short description",
-      "longDescription": "Detailed description",
-      "createdAt": "2024-01-06T00:00:00Z",
-      "url": "https://github.com/...",
-      "live": "https://...",
+      "name": "AI-powered teaching assistant",
+      "description": "A teacching assistant made with AI",
+      "longDescription": "This tool will help to teach in a more postive way. This tool will help to teach in a more postive way. This tool will help to teach in a more postive way",
+      "date": "March 2021",
+      "url": "https://github.com/DHRUVvkdv/vthacks-2024-frontend",
+      "live": "https://mapability.vercel.app/",
       "languages": [
-        "react",
-        "node",
-        "mongodb"
+        {
+          "name": "Dockerfile",
+          "iconifyClass": "simple-icons:docker"
+        },
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
       ],
       "video": "https://res.cloudinary.com/dru4ekf2q/video/upload/v1736185134/Portfolio/30_June_2021_4_e13vwl.mp4",
       "thumbnail": "https://res.cloudinary.com/dru4ekf2q/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1711268052/samples/upscale-face-1.jpg",
       "impact": [
-        "10k+ active users • Winner ",
-        "of XYZ Hacbgcdfjksl;kathon"
+        "•10k+ active users • Winner        df§     •of XYZ Hacbgcdfjksl;kathon",
+        "•of XYZ Hacbgcdfjksl;kathon"
       ],
       "features": [
-        "Feature 1",
-        "Feature 2"
-      ]
-    },
-    {
-      "id": "1",
-      "name": "Project Name",
-      "description": "Short description",
-      "longDescription": "Detailed description",
-      "createdAt": "2024-01-06T00:00:00Z",
-      "url": "https://github.com/...",
-      "live": "https://...",
-      "languages": [
-        "react",
-        "node",
-        "mongodb"
-      ],
-      "video": "https://res.cloudinary.com/dru4ekf2q/video/upload/v1736185134/Portfolio/30_June_2021_4_e13vwl.mp4",
-      "thumbnail": "https://res.cloudinary.com/dru4ekf2q/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1711268052/samples/upscale-face-1.jpg",
-      "impact": [
-        "10k+ active users • Winner ",
-        "of XYZ Hacbgcdfjksl;kathon"
-      ],
-      "features": [
-        "Feature 1",
-        "Feature 2"
-      ]
-    },
-    {
-      "id": "1",
-      "name": "Project Name",
-      "description": "Short description",
-      "longDescription": "Detailed description",
-      "createdAt": "2024-01-06T00:00:00Z",
-      "url": "https://github.com/...",
-      "live": "https://...",
-      "languages": [
-        "react",
-        "node",
-        "mongodb"
-      ],
-      "video": "https://res.cloudinary.com/dru4ekf2q/video/upload/v1736185134/Portfolio/30_June_2021_4_e13vwl.mp4",
-      "thumbnail": "https://res.cloudinary.com/dru4ekf2q/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1711268052/samples/upscale-face-1.jpg",
-      "impact": [
-        "10k+ active users • Winner ",
-        "of XYZ Hacbgcdfjksl;kathon"
-      ],
-      "features": [
-        "Feature 1",
-        "Feature 2"
+        "100+ concurrent users",
+        "Live display of topics"
       ]
     }
   ]

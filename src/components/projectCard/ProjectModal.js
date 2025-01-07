@@ -1,9 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { createPortal } from "react-dom";
 import ProjectLanguages from "../../components/projectLanguages/ProjectLanguages";
+import "./ProjectModal.css";
 
-export default function ProjectModal({ project, theme, onClose }) {
-  return (
-    <div className="modal-overlay" onClick={onClose}>
+export default function ProjectModal({ project, theme, isOpen, onClose }) {
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+
+      const handleEsc = (e) => {
+        if (e.key === "Escape") {
+          onClose(e);
+        }
+      };
+
+      window.addEventListener("keydown", handleEsc);
+      return () => {
+        document.body.style.overflow = "unset";
+        window.removeEventListener("keydown", handleEsc);
+      };
+    }
+  }, [isOpen, onClose]);
+
+  if (!isOpen) return null;
+
+  const modalContent = (
+    <div
+      className="modal-overlay"
+      onClick={onClose}
+      style={{ cursor: "default" }}
+    >
       <div
         className="modal-content"
         onClick={(e) => e.stopPropagation()}
@@ -49,16 +75,28 @@ export default function ProjectModal({ project, theme, onClose }) {
           {project.impact && (
             <div className="modal-section">
               <h3 style={{ color: theme.text }}>Impact & Achievements</h3>
-              <p style={{ color: theme.secondaryText }}>{project.impact}</p>
+              <ul style={{ color: theme.secondaryText }}>
+                {Array.isArray(project.impact) ? (
+                  project.impact.map((impact, index) => (
+                    <li key={index}>{impact.replace(/[•§]/g, "").trim()}</li>
+                  ))
+                ) : (
+                  <li>{project.impact}</li>
+                )}
+              </ul>
             </div>
           )}
 
           <div className="modal-section">
             <h3 style={{ color: theme.text }}>Technologies Used</h3>
-            <ProjectLanguages logos={project.languages} />
+            <div className="tech-section">
+              <ProjectLanguages logos={project.languages} />
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
+
+  return createPortal(modalContent, document.body);
 }
