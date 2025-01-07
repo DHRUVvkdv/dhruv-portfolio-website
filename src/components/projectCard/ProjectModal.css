@@ -6,7 +6,7 @@
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.75);
-  z-index: 10000;
+  z-index: 1050; /* Adjusted for Bootstrap compatibility */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,34 +27,35 @@
   padding: 2rem;
   margin: auto;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  z-index: 10001;
+  z-index: 1051; /* Higher than overlay */
   animation: slideIn 0.3s ease-out;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.modal-video-container {
+  margin: -2rem -2rem 2rem -2rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
-@keyframes slideIn {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.modal-video {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.modal-video video {
+  width: 100%;
+  max-height: 50vh;
+  object-fit: contain;
+  display: block;
 }
 
 .modal-close {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 1.5rem;
+  right: 1.5rem;
   background: none;
   border: none;
   font-size: 2rem;
@@ -65,39 +66,73 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  transition: background-color 0.2s;
-  z-index: 10002;
+  transition: all 0.2s ease;
+  z-index: 1052; /* Higher than modal content */
 }
 
 .modal-close:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
 }
 
-.modal-video {
-  margin: -2rem -2rem 2rem -2rem;
-  width: calc(100% + 4rem);
-  position: relative;
-  overflow: hidden;
-  background-color: #000;
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 }
 
-.modal-video video {
-  width: 100%;
-  max-height: 50vh;
-  object-fit: contain;
-  display: block;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+.modal-header h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.modal-date-badge {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-family: "Google Sans Regular";
+  backdrop-filter: blur(4px);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.modal-link-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  font-family: "Google Sans Medium";
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modal-link-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-link-button.live {
+  background-color: #2563eb;
+}
+
+.modal-link-button.github {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .modal-body {
   position: relative;
-}
-
-.modal-body h2 {
-  font-size: 1.875rem;
-  margin-bottom: 1.5rem;
-  font-family: "Google Sans Medium", sans-serif;
 }
 
 .modal-section {
@@ -132,11 +167,42 @@
   line-height: 1.5;
 }
 
-.tech-section {
+.technologies .tech-section {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: flex-start; /* Changed from center to flex-start */
   padding: 0.5rem 0;
+}
+
+/* Override Bootstrap tooltip styles if needed */
+.tooltip {
+  z-index: 1060 !important; /* Higher than modal */
+}
+
+.tooltip-inner {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+  padding: 5px 10px !important;
+  font-family: "Google Sans Regular", sans-serif !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {
@@ -146,16 +212,25 @@
     margin: 1rem;
   }
 
-  .modal-video {
+  .modal-video-container {
     margin: -1.5rem -1.5rem 1.5rem -1.5rem;
-    width: calc(100% + 3rem);
+    padding: 1.5rem;
   }
 
-  .modal-body h2 {
+  .modal-header h2 {
     font-size: 1.5rem;
   }
 
   .modal-section h3 {
     font-size: 1.125rem;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+
+  .modal-link-button {
+    width: 100%;
+    justify-content: center;
   }
 }

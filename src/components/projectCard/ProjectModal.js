@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { createPortal } from "react-dom";
 import ProjectLanguages from "../../components/projectLanguages/ProjectLanguages";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import "./ProjectModal.css";
 
 export default function ProjectModal({ project, theme, isOpen, onClose }) {
@@ -22,6 +23,10 @@ export default function ProjectModal({ project, theme, isOpen, onClose }) {
     }
   }, [isOpen, onClose]);
 
+  const openLink = (url) => {
+    window.open(url, "_blank");
+  };
+
   if (!isOpen) return null;
 
   const modalContent = (
@@ -38,21 +43,62 @@ export default function ProjectModal({ project, theme, isOpen, onClose }) {
         <button
           className="modal-close"
           onClick={onClose}
-          style={{ color: theme.text }}
+          aria-label="Close modal"
+          style={{ color: theme.text, backgroundColor: `${theme.text}15` }}
         >
           &times;
         </button>
 
         {project.video && (
-          <div className="modal-video">
-            <video controls>
-              <source src={project.video} type="video/mp4" />
-            </video>
+          <div className="modal-video-container">
+            <div className="modal-video">
+              <video controls>
+                <source src={project.video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         )}
 
         <div className="modal-body">
-          <h2 style={{ color: theme.text }}>{project.name}</h2>
+          <div className="modal-header">
+            <h2 style={{ color: theme.text }}>{project.name}</h2>
+            {project.date && (
+              <div
+                className="modal-date-badge"
+                style={{
+                  backgroundColor: `${theme.text}15`,
+                  color: theme.text,
+                }}
+              >
+                {project.date}
+              </div>
+            )}
+          </div>
+
+          <div className="modal-actions">
+            {project.url && (
+              <button
+                className="modal-link-button github"
+                onClick={() => openLink(project.url)}
+                style={{
+                  backgroundColor: `${theme.text}15`,
+                  color: theme.text,
+                }}
+              >
+                <FaGithub /> View on GitHub
+              </button>
+            )}
+            {project.live && (
+              <button
+                className="modal-link-button live"
+                onClick={() => openLink(project.live)}
+                style={{ backgroundColor: "#2563eb" }}
+              >
+                <FaExternalLinkAlt /> Live Demo
+              </button>
+            )}
+          </div>
 
           <div className="modal-section">
             <h3 style={{ color: theme.text }}>Overview</h3>
@@ -87,7 +133,7 @@ export default function ProjectModal({ project, theme, isOpen, onClose }) {
             </div>
           )}
 
-          <div className="modal-section">
+          <div className="modal-section technologies">
             <h3 style={{ color: theme.text }}>Technologies Used</h3>
             <div className="tech-section">
               <ProjectLanguages logos={project.languages} />
